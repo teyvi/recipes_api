@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 
 //apply middleware
-app.use(express.json)
+app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(cors());
 

@@ -15,10 +15,10 @@ const router = Router();
 //the database url
 
 //route to post data
-router.post("/:id", addRecipe);
+router.post("/", addRecipe);
 
 //route to delete data
-router.delete("", deleteRecipes);
+router.delete("/:id", deleteRecipes);
 
 //route to patch data by id
 router.patch("/:id", updateRecipe);
