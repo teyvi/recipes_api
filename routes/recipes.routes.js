@@ -7,6 +7,9 @@ import {
   getRecipes,
   updateRecipe,
 } from "../controllers/recipes.controller.js";
+import multer from "multer";
+
+const upload = multer({ dest: 'uploads' });
 
 dotenv.config();
 
